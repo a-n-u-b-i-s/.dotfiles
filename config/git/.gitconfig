@@ -1,0 +1,14 @@
+[user]
+	name = a-n-u-b-i-s
+	email = watalanubhava@gmail.com
+	signingkey = 42ACBE02FD0BF5B4
+[core]
+	editor = nvim
+[commit]
+	gpgsign = true
+[gpg]
+	program = /opt/homebrew/bin/gpg
+[credential]
+	helper = osxkeychain
+[init]
+	defaultBranch = main

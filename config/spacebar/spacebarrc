@@ -1,0 +1,9 @@
+spacebar -m config text_font         "Hack Nerd Font:Regular:12.0"
+spacebar -m config icon_font         "Font Awesome 5 Free:Regular:12.0"
+spacebar -m config title             off
+spacebar -m config background_color  0xff000000
+spacebar -m config foreground_color  0xffF8F8F2
+spacebar -m config space_icon_strip  I II III IV V VI VII VIII IX X
+spacebar -m config space_icon        
+spacebar -m config clock_icon        
+spacebar -m config clock_format      "%m/%d/%y %R"
