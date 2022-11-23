@@ -10,5 +10,11 @@
 	program = /opt/homebrew/bin/gpg
 [credential]
 	helper = osxkeychain
+	helper = 
+	helper = /usr/local/share/gcm-core/git-credential-manager
 [init]
 	defaultBranch = main
+[tag]
+	gpgSign = true
+[credential "https://dev.azure.com"]
+	useHttpPath = true

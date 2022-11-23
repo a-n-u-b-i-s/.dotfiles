@@ -305,6 +305,7 @@ mkdir -p ~/Documents/Wallpaper
 mkdir -p ~/Documents/Music
 mkdir -p ~/Documents/Personal
 mkdir -p ~/Documents/Work
+mkdir -p $(dirname "${BASH_SOURCE[0]}")/../secrets/decrypted
 
 #  _           _        _ _ 
 # (_)_ __  ___| |_ __ _| | |
@@ -314,7 +315,7 @@ mkdir -p ~/Documents/Work
 #                           
 
 # Install Homebrew Packages
-brew bundle install --file=$(dirname "${BASH_SOURCE[0]}")/Brewfile
+/opt/homebrew/bin/brew bundle install --file=$(dirname "${BASH_SOURCE[0]}")/Brewfile
 
 # Setup Fish Shell
 sudo echo /opt/homebrew/bin/fish >> /etc/shells

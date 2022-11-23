@@ -41,6 +41,9 @@ set -g fish_pager_color_progress $comment
 set -g fish_pager_color_prefix $cyan
 set -g fish_pager_color_completion $foreground
 set -g fish_pager_color_description $comment
+
+set -g GPG_TTY $(tty)
+
 neofetch 
 
 function list_dir --on-variable PWD; ls -lAh; end;
@@ -64,6 +67,7 @@ alias grep="rg"
 alias tf="touch"
 alias mkd="mkdir -p"
 alias z="git add . ; git cz"
+alias la="exa -lah"
 
 set -g EDITOR nvim
 
