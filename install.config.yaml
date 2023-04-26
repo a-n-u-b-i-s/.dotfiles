@@ -4,22 +4,21 @@
 
 - clean:
     ~/:
-        force: true
+      force: true
     ~/.config:
-        force: true
-        recursive: true
+      force: true
+      recursive: true
     ~/.aws:
-        force: true
-        recursive: true
+      force: true
+      recursive: true
     ~/.hammerspoon/:
-        force: true
-        recursive: true
+      force: true
+      recursive: true
     ~/.gnupg:
-        force: true
-        recursive: true
+      force: true
+      recursive: true
 
 - link:
-
     # Public Configs
     ~/.aws/config: ./config/aws/config
     ~/.config/fish/config.fish: ./config/fish/config.fish
