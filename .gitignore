@@ -1,4 +1,0 @@
-**/secrets/decrypted/**
-.gitsecret/keys/random_seed
-!*.secret
-**/unlocked.tar.gz

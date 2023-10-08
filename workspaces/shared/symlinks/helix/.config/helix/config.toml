@@ -1,0 +1,29 @@
+theme = "gruvbox_dark_hard"
+
+[editor]
+line-number = "relative"
+mouse = false
+true-color=true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+
+[editor.file-picker]
+hidden = false
+
+[editor.lsp]
+display-messages=true
+
+[keys.normal]
+G = "goto_file_end"
+X = "extend_line_above"
+ret = ["move_line_down", "goto_line_start"]
+
+[keys.normal.g]
+q = ":reflow"
+
+[keys.normal.space]
+q = ":quit"
+w = ":write"
+z = ":write-quit"
