@@ -41,7 +41,7 @@ sketchybar --default icon.font="Hack Nerd Font:Regular:12.0"  \
 # https://felixkratz.github.io/SketchyBar/config/components#space----associate-mission-control-spaces-with-an-item
 # to indicate active and available mission control spaces
 
-SPACE_ICONS=("" "" "" "" "󰲸" "󱑽")
+SPACE_ICONS=("" "" "󰲸" "󱑽")
 
 for i in "${!SPACE_ICONS[@]}"
 do

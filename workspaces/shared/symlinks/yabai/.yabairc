@@ -26,17 +26,17 @@ yabai -m config left_padding                 8
 yabai -m config right_padding                8
 yabai -m config window_gap                   4
 
+yabai -m config --space 1 top_padding        0
+yabai -m config --space 1 bottom_padding     0
+yabai -m config --space 1 left_padding       0
+yabai -m config --space 1 right_padding      0
+yabai -m config --space 1 window_gap         0
+
 yabai -m config --space 2 top_padding        0
 yabai -m config --space 2 bottom_padding     0
 yabai -m config --space 2 left_padding       0
 yabai -m config --space 2 right_padding      0
 yabai -m config --space 2 window_gap         0
-
-yabai -m config --space 3 top_padding        0
-yabai -m config --space 3 bottom_padding     0
-yabai -m config --space 3 left_padding       0
-yabai -m config --space 3 right_padding      0
-yabai -m config --space 3 window_gap         0
 
 yabai -m rule --add label="Finder" app="^Finder$" title="(Co(py|nnect)|Move|Info|Pref)" manage=off
 yabai -m rule --add label="Safari" app="^Safari$" title="^(General|(Tab|Password|Website|Extension)s|AutoFill|Se(arch|curity)|Privacy|Advance)$" manage=off
@@ -58,19 +58,14 @@ yabai -m rule --add app="^Ableton Live 11 Suite$" title="^Preferences$" manage=o
 yabai -m signal --add event="window_created" app="^Ableton Live 11 Suite$" title="^Preferences$" action="yabai -m window \$YABAI_WINDOW_ID --toggle float"
 
 # Only allow terminal on space 2
-yabai -m rule --add app="^kitty$" space=3
+yabai -m rule --add app="^WezTerm$" space=1
+yabai -m rule --add app="^Visual Studio Code$" space=1
 
 # Only allow Chrome and Safari on space 1
-yabai -m rule --add app="^(Google Chrome|Safari|Arc)$" space=2
+yabai -m rule --add app="^(Google Chrome|Safari|Arc|LibreWolf|Thorium|Floopy|Firefox|Chromium)$" space=2
 
-# Only allow VSCode on space 3
-yabai -m rule --add app="^Visual Studio Code$" space=4
+# Only allow Ableton on space 3
+yabai -m rule --add app="^Ableton Live 11 Suite$" space=3
 
-# Only allow Ableton on space 4
-yabai -m rule --add app="^Ableton Live 11 Suite$" space=5
-
-# Only allow Splice on space 5
-yabai -m rule --add app="^Splice$" space=6
-
-# Only allow Sunsama on space 1
-yabai -m rule --add app="^Sunsama$" space=1
+# Only allow Splice on space 4
+yabai -m rule --add app="^Splice$" space=4

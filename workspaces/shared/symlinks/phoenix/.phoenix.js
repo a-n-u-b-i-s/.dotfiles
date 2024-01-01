@@ -1,7 +1,7 @@
 Key.on('`', [], () => {
-  const isOpen = App.focused().name() === "kitty";
+  const isOpen = App.focused().name() === "WezTerm";
   if (!isOpen) {
-    App.launch('Kitty').focus();
+    App.launch('WezTerm').focus();
   } else {
     App.focused().hide();
   }
