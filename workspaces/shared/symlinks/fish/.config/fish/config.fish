@@ -109,7 +109,11 @@ alias gi="git init"
 
 # Directory Aliases
 alias mkd="mkdir -p"
+alias ls="eza"
 alias la="eza -lah"
+alias ll="eza -la"
+
+alias tre="erd -IHl.P -L 3 -s size -T 20 -y inverted -u si --no-git"
 
 # App Aliases
 alias grep="rg"

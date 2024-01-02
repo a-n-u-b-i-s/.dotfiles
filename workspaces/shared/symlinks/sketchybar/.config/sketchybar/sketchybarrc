@@ -75,7 +75,7 @@ sketchybar --add item clock right                              \
                          script="$PLUGIN_DIR/clock.sh"         \
                                                                \
                                                                \
-                         update_freq=120                       \
+                         update_freq=10                       \
            --subscribe battery system_woke power_source_change
 
 ##### Finalizing Setup #####
